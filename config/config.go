@@ -16,13 +16,13 @@ type Config struct {
 	DB_PORT     string
 }
 
-var ENV Config
-
 func LoadEnv() {
 	if err := godotenv.Load(); err != nil {
 		log.Fatal("Error loading .env file")
 	}
 }
+
+var ENV Config
 
 func LoadConfig() {
 	viper.AddConfigPath(".")
