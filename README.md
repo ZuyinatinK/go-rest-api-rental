@@ -45,8 +45,10 @@ Install Golang https://go.dev/doc/install
 5. Jalankan program menggunakan Air untuk live-reload:
    ```bash
    air
-   Program akan berjalan dan API akan dapat diakses di 'http://localhost:8080'.
    ```
+
+Program akan berjalan dan API akan dapat diakses di 'http://localhost:8080'.
+   
 
 ## Penggunaan
 
