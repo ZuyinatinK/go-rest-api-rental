@@ -21,6 +21,6 @@ func main() {
 	r := mux.NewRouter()
 	routes.RouteIndex(r)
 
-	log.Println("Server running on port", os.Getenv("PORT"))
+	log.Println("Server running")
 	http.ListenAndServe(fmt.Sprintf(":%v", os.Getenv("PORT")), r)
 }
