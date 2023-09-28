@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 	"go-rest-api-rental/models"
+	"os"
 
 	log "github.com/sirupsen/logrus"
 
@@ -14,7 +15,11 @@ var DB *gorm.DB
 
 func ConnectDB() {
 	connection := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?parseTime=true&loc=Asia%vJakarta",
-		ENV.DB_USER, ENV.DB_PASSWORD, ENV.DB_HOST, ENV.DB_PORT, ENV.DB_DATABASE, "%2F")
+		os.Getenv("DB_USER"),
+		os.Getenv("DB_PASSWORD"),
+		os.Getenv("DB_HOST"),
+		os.Getenv("DB_PORT"),
+		os.Getenv("DB_DATABASE"), "%2F")
 
 	db, err := gorm.Open(mysql.Open(connection), &gorm.Config{})
 	if err != nil {
