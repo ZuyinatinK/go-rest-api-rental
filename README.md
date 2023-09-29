@@ -73,5 +73,3 @@ Berikut merupakan penggunaan endpoint API:
 
 This project was developed by Zuyinatin Khofifah.
 Special thanks to Alterra Academy for providing the training and guidance.
-
-COBA
