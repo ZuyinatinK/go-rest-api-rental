@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"go-rest-api-rental/config"
 	"go-rest-api-rental/routes"
-	"os"
 
 	"net/http"
 
@@ -14,7 +13,6 @@ import (
 )
 
 func main() {
-	// config.LoadEnv()
 	config.LoadConfig()
 	config.ConnectDB()
 
@@ -22,5 +20,5 @@ func main() {
 	routes.RouteIndex(r)
 
 	log.Println("Server running")
-	http.ListenAndServe(fmt.Sprintf(":%v", os.Getenv("PORT")), r)
+	http.ListenAndServe(fmt.Sprintf(":%v", config.ENV.PORT), r)
 }
