@@ -48,7 +48,6 @@ Install Golang https://go.dev/doc/install
    ```
 
 Program akan berjalan dan API akan dapat diakses di 'http://localhost:8080'.
-   
 
 ## Penggunaan
 
@@ -74,3 +73,5 @@ Berikut merupakan penggunaan endpoint API:
 
 This project was developed by Zuyinatin Khofifah.
 Special thanks to Alterra Academy for providing the training and guidance.
+
+COBA
