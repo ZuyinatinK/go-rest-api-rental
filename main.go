@@ -15,7 +15,7 @@ import (
 
 func main() {
 	// config.LoadEnv()
-	config.LoadConfig()
+	// config.LoadConfig()
 	config.ConnectDB()
 
 	r := mux.NewRouter()
