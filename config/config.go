@@ -1,6 +1,7 @@
 package config
 
 import (
+	// "github.com/joho/godotenv"
 	log "github.com/sirupsen/logrus"
 
 	"github.com/spf13/viper"
@@ -14,6 +15,12 @@ type Config struct {
 	DB_DATABASE string
 	DB_PORT     string
 }
+
+// func LoadEnv() {
+// 	if err := godotenv.Load(); err != nil {
+// 		panic("Error loading .env file")
+// 	}
+// }
 
 var ENV Config
 
